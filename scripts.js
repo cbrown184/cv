@@ -22,10 +22,10 @@ function handleCommand(command) {
     }
     switch (command) {
         case '/help':
-            addOutput("Available commands: /help, /about, /down, /work, /education, /email, /phone, /github, /message, /music, /clear");
+            addOutput("Available commands: /help, /about, /down, /work, /education, /contact, /messageChris, /music, /clear");
             break;
         case '/about':
-            addOutput("My name is Chris, I'm originally from Newtownards, Co.Down, Northern Ireland. I am a Java / Kotlin engineer living in London.");
+            addOutput("My name is Chris, I'm originally from Newtownards, Co.Down, Northern Ireland. I am a Java / Kotlin engineer with 7+ years of experience. I'm currently living in London.");
             break;
         case '/down':
             addOutput("https://en.wikipedia.org/wiki/County_Down")
@@ -35,26 +35,20 @@ function handleCommand(command) {
             addOutput("The Ards Peninsula, jutting out into the Irish Sea, offers a blend of quaint villages, sandy beaches, and rich maritime history. Strangford Lough, the largest inlet in the British Isles, lies adjacent to it, and is a significant wildlife sanctuary, known for its diverse bird population and marine life.")
             addOutput("County Down is a blend of historical depth, natural beauty, and cultural richness, making it one of Northern Ireland's most diverse and enchanting regions.")
             break;
-        case '/work': 
-            addOutput("10x Banking London - Software Engineer - 07/2022 - Present")
-            addOutput("Vonage London - Java Developer - 09/2020 - 07/2022")
-            addOutput("Blockchain.com London - Software Engineer - 08/2019 to 09/2020")
-            addOutput("OTCXN Belfast - Software Engineer / Senior Software Engineer - 05/2018 to 08/2019")
-            addOutput("CME Belfast - Software Engineer - 08/2016 to 05/2018")
-            break;
         case '/education':
             addOutput("Queens University Belfast, BSC Computer Science 1st class honors https://www.qub.ac.uk")
             break;
-        case '/email': 
-            addOutput("cbrown184@protonmail.com");
+        case '/work': 
+            addOutput("10x Banking London,   Software Engineer,           07/2022 - Present")
+            addOutput("Vonage London,        Java Developer,              09/2020 - 07/2022")
+            addOutput("Blockchain.com,       London  Software Engineer,   08/2019 - 09/2020")
+            addOutput("OTCXN Belfast,        Senior Software Engineer,    05/2018 - 08/2019")
+            addOutput("CME Belfast,          Software Engineer,           08/2016 - 05/2018")
             break;
-        case '/phone':   
-            addOutput("+447798568854");
-            break;
-        case '/github':   
-            addOutput("github.com/cbrown184");
-            break;            
-        case '/message':
+        case '/contact': 
+            addOutput("Email: cbrown184@protonmail.com, Phone: +447798568854, Github: github.com/cbrown184");
+            break;     
+        case '/messageChris':
             addOutput("Type a message to send to me directly:");
             // Here, you can ask the user to input a message and then send it to you.
             waitingForMessage = true;
