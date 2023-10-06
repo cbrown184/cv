@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Terminal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+    <audio id="audioPlayer">
+        <source src="music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <canvas id="audioVisualizer" width="600" height="200"></canvas>
+
+    <div class="terminal">
+        <div class="output" id="output">
+            <div class="motd">Welcome to the Virtual Debian Terminal!</div>
+        </div>
+        <input type="text" id="input" placeholder="$" />
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

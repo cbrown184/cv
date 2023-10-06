@@ -1,0 +1,30 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background: black;
+    color: limegreen;
+}
+
+.terminal {
+    width: 80%;
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+.output {
+    padding: 20px;
+    border: 1px solid limegreen;
+    height: 400px;
+    overflow-y: auto;
+}
+
+input[type="text"] {
+    width: 100%;
+    border: none;
+    border-top: 1px solid limegreen;
+    padding: 5px 20px;
+    color: limegreen;
+    background: black;
+    outline: none;
+}
